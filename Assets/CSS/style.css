@@ -1,4 +1,6 @@
 :root{
+    --Deffont: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --Hfont: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     --background: rgb(30, 30, 30);
     --fav: rgb(255, 140, 1);
     --highlight: rgb(255, 205, 144);
@@ -14,7 +16,7 @@
     padding: 0px;
     box-sizing: border-box;
     color: var(--textcol);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--Deffont);
 }
 
 a{
@@ -84,7 +86,7 @@ a:hover{
 
 #Name{
     display:inline-block;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: var(--Hfont);
     font-size: 80pt;
     text-shadow: 0 0 8px var(--fav),
                  0 0 15px var(--highlight),
@@ -92,9 +94,13 @@ a:hover{
                  10px 5px 30px var(--sechigh);
 }
 
-.nav
-
-body{
-    
+.schtuff h2{
+    display:inline-block;
+    font-family: var(--Hfont);
+    font-size: 40pt;
+    background: linear-gradient(to right, var(--sechigh) 0%, var(--highlight) 45%, var(--secondcol) 130%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5 0 5px var(--fav),
+                 20 0 5px var(--secondcol);
 }
-
