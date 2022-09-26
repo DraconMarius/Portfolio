@@ -79,7 +79,7 @@ section {
 }
 
 .nav {
-    background-color: var(--transparent);
+    background-color: var(--tooltip-bg);
     margin-top: 40px;
     margin-left: 160px;
     font-size: 20pt;
@@ -89,13 +89,14 @@ section {
 }
 
 .nav ul {
+    background-color: var(--tooltip-bg);
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
 .nav ul li {
-    background-color: var(--transparent);
+    background-color: var(--tooltip-bg);
     padding-left: 5px;
     padding-right: 5px;
     display: inline-block;
@@ -256,4 +257,38 @@ footer {
     display: flex;
     flex: 1;
     justify-content: center;
+}
+
+@media screen and (max-width: 1573px) {
+    .nav {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        right: 0;
+    }
+
+    .nav ul li {
+        display: block;
+        position: sticky;
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 1364px) {
+    article {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 847px) {
+    #Name {
+        display: block;
+        text-align: center;
+    }
+
+    .nav {
+        display: inline-block;
+        text-align: center;
+    }
 }
