@@ -7,7 +7,7 @@
     --textcol: rgb(212, 212, 212);
     --secondcol: rgb(151, 5, 255);
     --sechigh: rgb(0, 168, 202);
-    --transparent: rgba(0, 0, 0, 0);
+    --tooltip-bg: rgba(0, 0, 0, 0);
 }
 
 * {
@@ -28,13 +28,46 @@ hr {
     visibility: hidden;
 }
 
-.inlineblock {
-    display: inline-block;
+section {
+    position: relative;
+}
+
+/* tooltip style */
+.link+.tooltip {
+    background-color: var(--tooltip-bg);
+    visibility: hidden;
+    color: var(--textcol);
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    top: 250px;
+    left: 0px;
+    font-size: 30pt;
+    opacity: 0%;
+    transition: opacity 0.8s;
+}
+
+/* injected tooltip style*/
+.link+.tooltip::after {
+    content: attr(data-float);
+    min-width: 450px;
+    position: absolute;
+    box-shadow: inset 0 0 8px var(--tooltip-bg);
+    text-shadow: 0 0 8px var(--fav),
+        0px 0 25px var(--secondcol),
+        0px 0px 25px var(--sechigh);
+    background-color: var(--tooltip-bg);
+    z-index: 1;
+}
+
+.link:hover+.tooltip {
+    visibility: visible;
+    opacity: 1;
 }
 
 .splash {
     display: flex;
-    flex: 1;
+    flex: 0;
 }
 
 .splash {
@@ -54,7 +87,7 @@ hr {
     font-size: 20pt;
     display: inline-block;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }
 
 .nav ul {
@@ -77,6 +110,7 @@ a {
     transition: all 0.5s ease-in-out;
 }
 
+/* Hover Link glow. ^transition */
 a:hover {
     text-decoration: underline;
     text-shadow: 0 0 20px var(--fav),
@@ -93,6 +127,11 @@ a:hover {
         10px 5px 30px var(--sechigh);
 }
 
+.schtuff {
+    display: block;
+}
+
+/* h2 Styling */
 .schtuff h2 {
     display: inline-block;
     align-items: center;
@@ -104,11 +143,31 @@ a:hover {
     transition: all 0.5s ease-in;
 }
 
-#Technical-Project {}
+article {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
+#Technical-Project .link img {
+    padding: 0px;
+    max-width: 450px;
+    z-index: 0;
+    opacity: 45%;
+}
+
+/* grow when hover, maybe will add center later*/
 #Technical-Project:hover h2 {
     font-size: 25pt;
-    align-self: center;
+    /* align-self: center; */
+}
+
+#Photography-Portfolio .link img {
+    padding: 0px;
+    max-width: 450px;
+    z-index: 0;
+    opacity: 45%;
 }
 
 #Photography-Portfolio:hover h2 {
