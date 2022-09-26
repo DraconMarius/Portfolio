@@ -1,4 +1,4 @@
-:root{
+:root {
     --Deffont: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     --Hfont: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     --background: rgb(30, 30, 30);
@@ -10,7 +10,7 @@
     --transparent: rgba(0, 0, 0, 0);
 }
 
-*{
+* {
     background-color: var(--background);
     margin: 0px;
     padding: 0px;
@@ -19,25 +19,25 @@
     font-family: var(--Deffont);
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-hr{
+hr {
     margin: 7px 0 7px 0;
     visibility: hidden;
 }
 
-.inlineblock{
+.inlineblock {
     display: inline-block;
 }
 
-.splash{
+.splash {
     display: flex;
     flex: 1;
 }
 
-.splash{
+.splash {
     height: 400px;
     width: 2600px;
     background-image: url("../IMG/DSCF3588.jpg");
@@ -50,57 +50,75 @@ hr{
 .nav {
     background-color: var(--transparent);
     margin-top: 40px;
-    margin-left: 160px; 
+    margin-left: 160px;
     font-size: 20pt;
     display: inline-block;
     position: fixed;
     z-index: 1;
 }
 
-.nav ul{
+.nav ul {
     list-style-type: none;
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
 .nav ul li {
- 
     background-color: var(--transparent);
     padding-left: 5px;
     padding-right: 5px;
     display: inline-block;
     text-shadow: 0 0 8px var(--fav),
-    0px 0 25px var(--secondcol),
-    0px 0px 25px var(--sechigh);
+        0px 0 25px var(--secondcol),
+        0px 0px 25px var(--sechigh);
 }
 
-a{
+a {
     transition: all 0.5s ease-in-out;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
     text-shadow: 0 0 20px var(--fav),
-                 0 0 20px var(--secondcol);
+        0 0 20px var(--secondcol);
 }
 
-#Name{
-    display:inline-block;
+#Name {
+    display: inline-block;
     font-family: var(--Hfont);
     font-size: 80pt;
     text-shadow: 0 0 8px var(--fav),
-                 0 0 15px var(--highlight),
-                 5px 0 25px var(--secondcol),
-                 10px 5px 30px var(--sechigh);
+        0 0 15px var(--highlight),
+        5px 0 25px var(--secondcol),
+        10px 5px 30px var(--sechigh);
 }
 
-.schtuff h2{
-    display:inline-block;
+.schtuff h2 {
+    display: inline-block;
+    align-items: center;
     font-family: var(--Hfont);
-    font-size: 40pt;
+    font-size: 20pt;
     background: linear-gradient(to right, var(--sechigh) 0%, var(--highlight) 45%, var(--secondcol) 130%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 5 0 5px var(--fav),
-                 20 0 5px var(--secondcol);
+    transition: all 0.5s ease-in;
+}
+
+#Technical-Project {}
+
+#Technical-Project:hover h2 {
+    font-size: 25pt;
+    align-self: center;
+}
+
+#Photography-Portfolio:hover h2 {
+    font-size: 30pt;
+}
+
+#About-Me:hover h2 {
+    font-size: 30pt;
+}
+
+#Contact:hover h2 {
+    font-size: 30pt;
 }

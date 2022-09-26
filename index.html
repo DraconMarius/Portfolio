@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-    <head>
-        <meta chatset="UTF-8" />
-        <meta name="viewport" content="width=devices-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./assets/css/reset.css" />
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <title> Portfolio - Mari </title>
-    </head>
+<head>
+    <meta chatset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title> Portfolio - Mari </title>
+</head>
 
 <body>
     <header>
@@ -31,10 +30,10 @@
                 <li> <a href="#Resume">Resume</a></li>
             </ul>
         </nav>
-        <hr/>
+        <hr />
     </header>
     <div class="splash"></div>
-    <hr/>
+    <hr />
     <main class="schtuff">
         <section id="Technical-Project">
             <h2>
@@ -42,18 +41,18 @@
             </h2>
             <article>
                 <h3>
-                    CSS Snippet Cheatsheet
+                    <a href="">CSS Snippet Cheatsheet</a>
                 </h3>
                 <h3>
-                    Placeholder #1
+                    <a href="">Refactor Horiseon</a>
                 </h3>
                 <h3>
-                    Placeholder #2
+                    <a href="">Placeholder #1</a>
                 </h3>
-            </article>    
+            </article>
         </section>
-        <hr/>
-        <section id="Photography Portfolio">
+        <hr />
+        <section id="Photography-Portfolio">
             <h2>
                 Photography Portfolio
             </h2>
@@ -63,48 +62,57 @@
                 </h3>
             </article>
         </section>
-        <hr/>
-        <section id="About Me">
+        <hr />
+        <section id="About-Me">
             <h2>
                 About Me
             </h2>
             <article>
                 <p>
-                    After graduating with a BS in Arts Management in 2016, Mari dedicated a year of service with ArtistYear in Philadelphia. He integrated Photography as an art elective, and led students to create their own personal portfolio to share their work and views with their communities.
+                    After graduating with a BS in Arts Management in 2016, Mari dedicated a year of service with
+                    ArtistYear in Philadelphia. He integrated Photography as an art elective, and led students to create
+                    their own personal portfolio to share their work and views with their communities.
                 </p>
                 <p>
-                    In 2020, Mari was contracted as a Recruiting Coordinator @ Google via Adecco, and relocated back to the Bay Area. He was later promoted to a supervisor role who led a team of 35+ coordinators during the transition from Remote to Hybrid work week in 2022.
+                    In 2020, Mari was contracted as a Recruiting Coordinator @ Google via Adecco, and relocated back to
+                    the Bay Area. He was later promoted to a supervisor role who led a team of 35+ coordinators during
+                    the transition from Remote to Hybrid work week in 2022.
                 </p>
                 <p>
-                    Currently a part of the Berkeley Coding Bootcamp to further my technical knowledge to be more competitive in the current job market. Thanks for taking the time and enjoy your visit 
+                    Currently a part of the Berkeley Coding Bootcamp to further my technical knowledge to be more
+                    competitive in the current job market. Thanks for taking the time and enjoy your visit
                 </p>
             </article>
         </section>
-        <hr/>
-        <form name="Contact Me">
-            <h2>
-                Contact Me
-            </h2>
-            <p>
-                <label for="reasons">Why are you reaching out?</label>
-                <select id="reasons">
-                    <option> &#128421; Technical Project Related</option>
-                    <option> &#128248; Photography Related</option>
-                </select>
-            </p>
-            <p>
-                <label for="name">Name:</label>
-                <input class="form-text" id="name" type="text" placeholder="WHO DIS" />
-            </p>
-            <p>
-                <label for="email">E-mail:</label>
-                <input class="form-text" id="email" type="text" placeholder="Email plz" />
-            </p>
-        </form>
+        <hr />
+        <!-- Due to element form don't like some of the style that I am apply,
+        switched to form inside section -->
+        <section id="Contact">
+            <form>
+                <h2>
+                    Contact Me
+                </h2>
+                <p>
+                    <label for="reasons">Why are you reaching out?</label>
+                    <select id="reasons">
+                        <option> &#128421; Technical Project Related</option>
+                        <option> &#128248; Photography Related</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="name">Name:</label>
+                    <input class="form-text" id="name" type="text" placeholder="WHO DIS" />
+                </p>
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input class="form-text" id="email" type="text" placeholder="Email plz" />
+                </p>
+            </form>
+        </section>
     </main>
-    <footer >
+    <footer>
         <p>
-        &copy; 2022 Mari K. Ma &#128571;
+            &copy; 2022 Mari K. Ma &#128571;
         </p>
     </footer>
 </body>
