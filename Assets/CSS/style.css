@@ -12,8 +12,13 @@
 
 * {
     background-color: var(--background);
+    background-size: auto;
     margin: 0px;
-    padding: 0px;
+    padding-left: -50px;
+    padding-top: -100px;
+    padding-right: -50px;
+    padding-bottom: -100px;
+    background-repeat: none;
     box-sizing: border-box;
     color: var(--textcol);
     font-family: var(--Deffont);
@@ -30,6 +35,10 @@ hr {
 
 section {
     position: relative;
+}
+
+p {
+    text-align: center;
 }
 
 /* tooltip style */
@@ -67,15 +76,14 @@ section {
 
 .splash {
     display: flex;
-    flex: 0;
-    overflow-x: hidden;
-    height: 400px;
-    width: 2600px;
-    background-image: url("../IMG/DSCF3588.jpg");
+    flex: 1, 0;
+    height: 450px;
+    width: auto;
+    justify-content: center;
+    background-image: url("../IMG/DSCF3588.png");
     background-size: cover;
     background-position: center;
-    background-position-x: -100px;
-    box-shadow: inset 0px 0px 10px 10px var(--background);
+    box-shadow: inset 0px 0px 20px 10px var(--background);
 }
 
 .nav {
@@ -201,24 +209,26 @@ article {
     font-size: 30pt;
 }
 
-#About-Me article {
+#About-Me .bio {
     flex: 1;
-    margin: 0 200px 0 200px;
+    margin: 0 200px 5px 200px;
     display: flex;
     text-align: center;
+    justify-content: center;
     font-size: 15pt;
 }
 
 #About-Me .line {
-    margin: 25px 330px 25px 330px;
-    display: block;
+    align-items: center;
     flex: 1;
     visibility: visible;
     border-top: 1px var(--tooltip-bg) solid;
 }
 
 #Resume a {
-    display: block;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     font-size: 25pt;
     font-weight: 200%;
     color: var(--highlight);
@@ -259,7 +269,35 @@ footer {
     justify-content: center;
 }
 
-@media screen and (max-width: 1573px) {
+@media screen and (min-width: 1575px) {
+
+    .nav {
+        margin-top: 50px;
+        padding: 0;
+        right: 0;
+    }
+
+    .nav ul li {
+        position: sticky;
+        text-align: right;
+    }
+
+    #About-Me .bio {
+        display: block;
+    }
+
+    .line {
+        margin: 25px 200px 25px 200px;
+        display: block;
+    }
+
+    #Resume {
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1574px) {
     .nav {
         display: inline-block;
         margin: 0;
@@ -272,6 +310,10 @@ footer {
         position: sticky;
         text-align: right;
     }
+
+    .line {
+        margin: 25px 200px 25px 200px;
+    }
 }
 
 @media screen and (max-width: 1364px) {
@@ -283,6 +325,7 @@ footer {
 
 @media screen and (max-width: 847px) {
     #Name {
+        font-size: 60pt;
         display: block;
         text-align: center;
     }
@@ -290,5 +333,30 @@ footer {
     .nav {
         display: inline-block;
         text-align: center;
+    }
+
+    .splash {
+        display: none;
+    }
+
+    #About-Me .bio {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-left: 30px;
+        height: auto;
+        width: 500px;
+        flex: 1;
+        flex-wrap: wrap;
+    }
+
+    #About-Me .line {
+        display: block;
+        margin: 25px 50px 25px 50px;
+    }
+
+    #Resume a {
+        font-size: 50;
+        flex-wrap: wrap;
     }
 }
