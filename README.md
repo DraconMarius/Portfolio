@@ -21,7 +21,7 @@ With my previous experience as a freelance photographer, I had included a photog
 I had taken some creative liberty and have one big splash image, and smaller application icons at the moment. Will continue to update this portfolio with additional projects and functionality in the future
 
 ## Links / Media
-[<img src="./Assets/IMG/sample.png" alt='sample' ](https://draconmarius.github.io/Portfolio/) 
+[<img src="./Assets/IMG/sample.png" alt='sample'>](https://draconmarius.github.io/Portfolio/) 
 
 ## Technologies Used
 > HTML, CSS, Markdown
@@ -34,8 +34,8 @@ I had taken some creative liberty and have one big splash image, and smaller app
 ## Contact
 Feel free to contact me @ the following:
 
-[<img src="./assets/images/logo_github_icon_143196.png" alt='github' height='40'>](https://github.com/DraconMarius) 
+[<img src="./Assets/IMG/logo_github_icon_143196.png" alt='github' height='40'>](https://github.com/DraconMarius) 
 
-[<img src="./assets/images/logo_linkedin_icon_143191.png" alt='linkedin' height='40'>](https://www.linkedin.com/in/mari-ma-70771585/)  
+[<img src="./Assets/IMG/logo_linkedin_icon_143191.png" alt='linkedin' height='40'>](https://www.linkedin.com/in/mari-ma-70771585/)  
 
 [Icon credit @ Anton Kalashnyk](https://icon-icons.com/users/14quJ7FM9cYdQZHidnZoM/icon-sets/)
